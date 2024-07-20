@@ -37,6 +37,7 @@ image:
 	docker build -t ${IMAGE_TAG} .
 
 push:
+	@echo "image id: ${IMAGE_TAG}"
 	docker push ${IMAGE_TAG}
 
 clean:
